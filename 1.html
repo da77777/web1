@@ -1,0 +1,130 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+<title>WEB1 - html</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+<h1><a href="index.html">WEB</a></h1>
+<ul>
+  <li><a href="1.html">HTML</a></li>
+  <li><a href="2.html">CSS</a></li>
+  <li><a href="3.html">JavaScript</a></li>
+  <li><a href="4.html">기타</a></li>
+</ul>
+
+  <h2>HTML</h2>
+  <h3>html의 구조</h3>
+<p>
+<ol>
+  <li>title : 주소창 위 탭에 표시되는 웹페이지의 타이틀.</li>
+  <li>meta : meta charset="utf-8"의 구성으로 사용한다.<br>
+    char은 문자, set은 규칙이라는 뜻이며<br>
+    utf-8로 문서를 읽으라 즉, 이 문서는 utf-8 방식으로 저장되어 있다는 뜻이다.</li>
+  <li>head : title, meta와 본문을 구분하기 위해 구성에 삽입하는 필수 태그.</li>
+  <li>body : title, meta와 본문을 구분하기 위해 본문에 삽입하는 필수 태그.</li>
+  <li>html : head와 body를 감싸는 태그.</li>
+  <li>!DOCTYPE html : html 위에 관용적으로 작성하는 태그. 이 문서는 html이라는 뜻이다. 닫는 태그는 없다.</li>
+</ol>
+</p>
+<p>
+※ html의 뼈대<br>
+    < !DOCTYPE html><br>
+    < html><br><br>
+    < head><br>
+    < title><br>
+    < meta charset=""><br>
+    < /head><br><br>
+    < body><br>
+    < /body><br><br>
+    < /html><br>
+</p>
+
+<h3>태그</h3>
+<ol>
+  <li>strong : 굵게</li>
+  <li>u : 밑줄(underline)</li>
+  <li>hn : 제목(heading) 표시. 글자가 굵어지며 줄바꿈되는 효과가 있으며, h뒤의 숫자는 1~6까지 있고 숫자가 커질수록 글자의 크기는 작아진다.</li>
+  <li>br : 줄바꿈. 닫는 태그는 없다.</li>
+  <li>p : 단락 구분. 위아래 공백이 생긴다. 정보 제공으로서 적합한 태그는 br 보다는 p 태그이다.<br> br은 단순 시각적인 줄바꿈인 반면, p태그는 주제에 따라 의미 있게 단락을 구분하는 것이기 때문이다.</li>
+  <li>img : 이미지삽입. img src="이미지이름" width="n" 의 구성으로 사용한다.<br>
+    이미지 다운로드하고 web 폴더로 이동 후 사용하면 된다.<br> img에는 src와 width라는 2가지 속성(attribute)이 추가되며, 각 소스 작성 순서는 상관 없다.<br>
+    src는 '소스' 의 약자이며 삽입하고자 하는 이미지의 이름을 기재하면 된다.<br>
+    width는 이미지의 크기를 조절해주는데, width="100"과 width="100%"는 다르다. 100%의 경우 화면 크기에 따라 이미지 크기도 자동으로 변경된다.</li>
+<img src="이미지1.jpg" width="50%">
+  <li>a : <a href="https://www.w3.org/TR/html52/" target="_blank" title="html2.5 specification">링크태그.</a><br>
+    a href="링크 주소" 구성으로 사용하며,  h는 하이퍼텍스트, ref는 참조를 뜻한다.<br>
+    클릭 시 새 탭을 열어 보여주고 싶으면 target="_blank"를 사용하며<br>
+    마우스를 올려놓았을 때 링크 이름이 나오게 하고싶은 경우 title="링크 이름"을 사용한다.<br>
+    최종적으로는 a href="링크 주소" tareget="_blank" title="링크 이름">의 구성이 된다.</li>
+  <li>부모자식관계의 태그 : ul/ol - li</li>
+<ul>
+<li>li : 목차 구성시 사용하는 태그로 list의 약자.</li>
+<li>ul : 목차를 구분해주는 태그로 unorderd list의 약자. li 사용 시 ul은 필수 사용 태그이다.<br>
+   가령 목차1은 HTML, CSS, JavaScript를 나타내고, 목차2는 참가자1, 참가자2, 참가자3을 의미할 때, 목차1과 목차2를 의미적으로 구분해주는 태그이다.</li>
+<li>ol : 목차를 구분해주는 태그로, orderd list의 약자. 전반적으로 ul과 동일하다.<br>
+  차이점은 ul의 경우 목차에 일일이 순번을 기재해야하는 반면, ol의 경우 알아서 순번을 기재해준다.<br>
+  목차가 여러개인 경우 ol이 유용하다. 가령 목차가 20개인데 1번 목차를 삭제해야 하는 경우, ul은 손으로 수정해야 하는데 ol은 1번 목차를 삭제하면 자동으로 숫자가 바뀐다.<br>
+  이 페이지의 오픈소스에서 하단 예시 중 ol태그의 목차를 아무거나 지워보자.</li>
+  <ul>
+<li>예시-ul 사용 시</li>
+    <ul>
+      <li>1. HTML</li>
+      <li>2. CSS</li>
+      <li>3. JavaScript</li>
+    </ul>
+<li> 예시-ol 사용 시</li>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+    </ul>
+    </ul>
+    </ol>
+</p><br>
+
+<strong>[TIP]</strong>
+<ol>
+<li>여러 줄에 같은 태그를 적용하고 싶을 때 : ctrl 누른 상태에서 각 줄을 클릭하고 태그 작성</li>
+<li>특정 페이지의 오픈소스를 보려면 페이지 화면에서 마우스 우클릭하고 '소스보기' 클릭</li>
+</ol>
+
+<strong>[궁금한 것]</strong>
+<ol>
+<li>img 태그쪽에 작성한 < /p>의 p 는 왜 빨간색배경이 생겼는가? 오류 났다는 건 알겠는데 아니 왜 어느 부분에서 오류가 난 건데?</li>
+<li>이미지 가운데 정렬은 어떻게 하는가?</li>
+<li>목차 작성을 위해 ol 혹은 ul 사용 시 생기는 위아래 공백을 없애고 싶을 땐 어떻게 하는가?</li>
+<li>목차 작성 시 '1.'이 아니라 '가.' 혹은 '1)' 등으로 표시하고 싶을 땐 어떻게 하는가?</li>
+<li>목차 작성 시 들여쓰기 없이 나타내려면 어떻게 해야하는가?</li>
+</ol>
+
+<strong>[참고 사이트]</strong>
+<ol>
+<li>https://www.w3schools.com/ : 각 태그에 대해 설명한 사이트. 태그에 대한 정의보다 예시를 먼저 보고 내 코드에서 어떤 효과를 내는 태그인지 확인해본 후에 정의를 보는 것이 효과적.</li>
+<li>https://www.advancedwebranking.com./html/ : 수많은 웹페이지들을 분석하고 정리한 사이트. 참고로 가장 첫 페이지의 그래프는 각 웹 사이트들이 총 몇 개의 태그들로 구성되어 있는지를 나타냄.</li>
+<li>https://unsplash.com/ : 무료 이미지 제공 사이트.</li>
+</ol>
+
+<strong>[추천 검색어]</strong>
+<ol>
+<li>best html editor 2021</li>
+<li>html new line tag</li>
+<li>html paragraph tag</li>
+<li>html specification</li>
+</ol>
+
+<strong>[고민할 것]</strong>
+<ol>
+<li>웹사이트는 저작권이 없으며 모든 사람이 접근할 수 있는 정보제공 매체임. 가령 시각장애가 있는 사람도 음성서비스를 통해 글자를 파악함으로써 정보를 얻을 수 있음. 그런데 만약 시각적인 미(美)를 추구하기 위해 글자를 이미지화해버린다면? 시각장애가 있는 사람에게 그 정보는 아무 쓸모가 없고 시각장애인은 해당 정보로부터 소외됨.</li>
+</ol>
+
+<strong>[공부한 날짜]</strong>
+<ol>
+<li>2021. 5. 10.</li>
+<li>2021. 5. 13.</li>
+</ol>
+
+</body>
+</html>
